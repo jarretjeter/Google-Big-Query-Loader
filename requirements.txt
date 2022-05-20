@@ -1,0 +1,5 @@
+google-cloud-storage==1.38.0
+google-cloud-bigquery==2.18.0
+jupyterlab==3.0.14
+notebook==6.3.0
+pandas==1.2.4
