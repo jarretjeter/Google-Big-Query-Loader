@@ -51,9 +51,26 @@ rmn_emprs.sort_values("Index")
 
 
 # project_id = "deb-01-346205"
+# class BQLoader():
+
+#     def __init__(self):
+#         client = bigquery.Client()
+#         self.client = client 
+    
+#     def create_dataset(self, id:str, location:str):
+#         client = self.client
+#         dataset_id = "{}." + f"{id}".format(client.project)
+#         dataset = bigquery.Dataset(dataset_id)
+#         dataset.location = f"{location}"
+#         dataset = client.create_dataset(dataset, timeout=30)
+#         logger.info("Created dataset {}.{}".format(client.project, dataset.dataset_id))
+
+# bq_dataset = BQLoader()
+# bq_dataset.create_dataset("bigquery_code_review", "US")
+
 client = bigquery.Client()
 
-dataset_id = "{}.roman_emperors".format(client.project)
+dataset_id = "{}.bigquery_code_review".format(client.project)
 
 dataset = bigquery.Dataset(dataset_id)
 
