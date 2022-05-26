@@ -19,7 +19,6 @@ _I've downloaded a csv containing data of the ancient Roman emperors from kaggle
 
 * _Make sure you have a text editor such as Visual Studio Code installed.
 * _Have a running version of Python3.7
-* _Install Beekeeper Studio and Docker
 * _Clone this repository (https://github.com/jarretjeter/Google-Big-Query-Loader.git) onto your local computer from github_
 * _From the data folder, run the get_csv.sh script to download the the csv from google cloud storage_
 * _If you haven't already, I would recommend reading the Google Cloud (https://console.cloud.google.com) documentation for setting up a project and your google credentials so that you can load the file to server_
