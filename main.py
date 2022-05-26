@@ -5,10 +5,13 @@ import pandas as pd
 import pandas_gbq
 import sys
 
+
+# Setting up logger configuration to log back information.
 logging.basicConfig(format='[%(levelname)-5s][%(asctime)s][%(module)s:%(lineno)04d] : %(message)s',
                     level=INFO,
                     stream=sys.stderr)
 logger: logging.Logger = logging
+
 
 # Reading csv into dataframe and performing transformations, setting inplace=True for each so that no copies are made for this case.
 rmn_emprs = pd.read_csv("./data/roman-emperors.csv")
@@ -24,6 +27,7 @@ rmn_emprs.fillna(value=0, inplace=True)
 rmn_emprs.sort_values(by="Index", inplace=True)
 
 
+
 # Instantiate my big query client api which will create a dataset
 client = bigquery.Client()
 # Tell the client to use "bq_code_review" as the dataset name for my project
@@ -36,6 +40,8 @@ dataset.location = "us-west2"
 dataset = client.create_dataset(dataset, timeout=30)
 # If successful, log the creation of the dataset
 logger.info("Created dataset {}.{}".format(client.project, dataset.dataset_id))
+
+
 
 # Project to look for when creating a table,
 project_id = "deb-01-346205"
