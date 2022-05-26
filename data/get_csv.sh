@@ -1,0 +1,1 @@
+gsutil cp gs://bq-code-review/Roman-Emperors/roman-emperors.csv ./data

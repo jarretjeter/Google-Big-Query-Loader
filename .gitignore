@@ -1,6 +1,6 @@
-/data
 /venv
 /.vscode
 /__pycache__
+roman-emperors.csv
 main2.py
 test.ipynb
