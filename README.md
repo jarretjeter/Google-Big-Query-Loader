@@ -13,7 +13,7 @@
 
 ## Description
 
-_I've downloaded a csv containing data of the ancient Roman emperors from kaggle.com. I needed to do transformations such as drop certain columns from the csv and convert data types so that I could properly load it to google big query_
+_I've downloaded a csv containing data of the ancient Roman emperors from kaggle (https://www.kaggle.com/datasets/lberder/roman-emperors-from-26-bc-to-395-ad?select=roman-emperors.csv). I needed to do transformations such as drop certain columns from the csv and convert data types so that I could properly load it to google big query_
 
 ## Setup/Installation Requirements
 
@@ -36,4 +36,4 @@ _If you have any questions, please email me at jarretjeter@gmail.com_
 
 [MIT](https://github.com/jarretjeter/Google-Big-Query-Loader/blob/main/LICENSE.txt)
 
-Copyright (c) _5/17/2022_ _Jarret Jeter_
+Copyright (c) _5/20/2022_ _Jarret Jeter_
